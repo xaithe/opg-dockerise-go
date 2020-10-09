@@ -23,4 +23,4 @@ To help guide you in this task, we've outlined some typical steps (in no particu
 - Building the Go app
 - Mapping ports
 - Setting up Docker on your local machine
-- Passing environment variable
+- Passing environment variables
