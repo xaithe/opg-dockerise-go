@@ -22,5 +22,5 @@ To help guide you in this task, we've outlined some typical steps (in no particu
 - Creating a Dockerfile
 - Building the Go app
 - Mapping ports
-- Setup Docker on your local machine
+- Setting up Docker on your local machine
 - Passing environment variable
