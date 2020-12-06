@@ -9,6 +9,7 @@ COPY app/go.mod .
 
 RUN go mod download
 
+# Copy source code
 COPY app/. .
 
 # Build the go app
