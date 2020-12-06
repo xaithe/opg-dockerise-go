@@ -39,7 +39,7 @@ To help guide you in this task, we've outlined some typical steps (in no particu
 ### docker
 The image can be built using `docker build -t moj-docker .`
 
-To run the built image in a container, use `docker run -d -p 8080:8080 moj-docker`
+To run the built image in a container, use `docker run -d -p 8080:8080 --env APP_STATUS=OK moj-docker`
 
 ### docker-compose
-Alternatively, `docker-compose up` can be used to build the image and spin it up in a container
+Alternatively, `docker-compose up` can be used to build the image and spin it up in a container with the appropriate environment variables set

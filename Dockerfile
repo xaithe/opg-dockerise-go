@@ -21,9 +21,6 @@ FROM alpine:latest
 # Update package list & Add certs
 RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 
-# Pass environment vars
-ENV APP_STATUS=OK
-
 # Copy built app to new image
 COPY --from=builder /go/bin/testapi /go/bin/testapi
 
