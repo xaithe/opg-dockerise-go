@@ -24,7 +24,4 @@ RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 # Copy built app to new image
 COPY --from=builder /go/bin/testapi /go/bin/testapi
 
-# Expose required port
-EXPOSE 8080
-
 ENTRYPOINT ["/go/bin/testapi"]
