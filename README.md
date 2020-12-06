@@ -27,8 +27,8 @@ To help guide you in this task, we've outlined some typical steps (in no particu
 
 
 ## Approach
-- Forked the repo via GitHub + cloned it to my local machine
-- Built the api locally to verify there was nothing to fix w/ `go build`
+- Forked the repo via GitHub and cloned it to my local machine
+- Built the api locally to verify there was nothing to fix with `go build`
 - Investigated best practice for dockerising Go
 - Wrote simple dockerfile to make sure I was on the right track
     - This image was ~840MB (!)
