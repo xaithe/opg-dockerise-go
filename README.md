@@ -24,3 +24,22 @@ To help guide you in this task, we've outlined some typical steps (in no particu
 - Mapping ports
 - Setting up Docker on your local machine
 - Passing environment variables
+
+
+## Approach
+- Forked the repo via GitHub + cloned it to my local machine
+- Built the api locally to verify there was nothing to fix w/ `go build`
+- Investigated best practice for dockerising Go
+- Wrote simple dockerfile to make sure I was on the right track
+    - This image was ~840MB (!)
+- Decided to optimise my approach with a staged build, bringing the image size down to 12.6MB
+- Finally, added a docker-compose file to make deployment and any future additions easier
+
+## Building + Running the Image
+### docker
+The image can be built using `docker build -t moj-docker .`
+
+To run the built image in a container, use `docker run -d -p 8080:8080 moj-docker`
+
+### docker-compose
+Alternatively, `docker-compose up` can be used to build the image and spin it up in a container
